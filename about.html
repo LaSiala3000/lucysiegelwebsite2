@@ -119,6 +119,34 @@
       color: var(--dark);
     }
 
+    .about-quote {
+      margin-top: 3rem;
+      font-family: var(--font-ui);
+      font-size: 0.8125rem;
+      font-style: italic;
+      line-height: 1.8;
+      color: var(--dark);
+    }
+
+    .about-quote .quote-line {
+      display: block;
+    }
+
+    .about-quote .quote-line-1,
+    .about-quote .quote-line-2,
+    .about-quote .quote-line-3,
+    .about-quote .quote-line-4,
+    .about-quote .quote-line-5 { padding-left: 6.5rem; }
+
+    .about-quote cite {
+      font-style: normal;
+      display: block;
+      margin-top: 1rem;
+      margin-left: 6.5rem;
+      padding-left: 0.5rem;
+      border-left: 2px solid var(--dark);
+    }
+
     @media (max-width: 768px) {
       nav {
         padding: 1.5rem 1.5rem 3rem;
@@ -152,6 +180,20 @@
       .about-text {
         font-size: 0.8125rem;
       }
+
+      .about-quote {
+        font-size: 0.75rem;
+      }
+
+      .about-quote .quote-line-1,
+      .about-quote .quote-line-2,
+      .about-quote .quote-line-3,
+      .about-quote .quote-line-4,
+      .about-quote .quote-line-5 { padding-left: 2.5rem; }
+
+      .about-quote cite {
+        margin-left: 2.5rem;
+      }
     }
   </style>
 </head>
@@ -178,6 +220,14 @@
         <p>Lucy Siegel is a writer living in Brooklyn. In her poetry and prose she explores themes of personal transformation and the complexity of the human experience. She leans on rupture and refusal of tidy conclusions in favor of honesty and curiosity over certainty. She is currently working on her debut novel and poetry manuscript.</p>
       </div>
     </div>
+    <blockquote class="about-quote">
+      <span class="quote-line quote-line-1">"I cannot make you</span>
+      <span class="quote-line quote-line-2">understand. I cannot make</span>
+      <span class="quote-line quote-line-3">anyone understand what is</span>
+      <span class="quote-line quote-line-4">happening inside me. I cannot</span>
+      <span class="quote-line quote-line-5">even explain it to myself."</span>
+      <cite>Franz Kafka</cite>
+    </blockquote>
   </main>
 
 </body>
