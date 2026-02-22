@@ -65,7 +65,7 @@
       display: flex;
       list-style: none;
       justify-content: flex-start;
-      gap: 2.5rem;
+      gap: 1.25rem;
       padding: 0;
     }
 
@@ -88,18 +88,33 @@
 
     .page-content {
       padding: 0 2rem 4rem;
+      padding-left: 15.7rem;
       max-width: 880px;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
     }
 
-    .coming-soon {
+    .publications-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .publications-list li {
+      margin-bottom: 1.25rem;
       font-family: var(--font-ui);
-      font-weight: 700;
-      font-size: 0.80rem;
-      letter-spacing: 0.12em;
+      font-size: 0.875rem;
+      line-height: 1.6;
       color: var(--dark);
-      text-transform: uppercase;
+    }
+
+    .publications-list a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .publications-list a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
@@ -108,7 +123,7 @@
       }
 
       .nav-links {
-        gap: 1.5rem;
+        gap: 1rem;
         flex-wrap: wrap;
       }
 
@@ -120,8 +135,8 @@
         padding: 0 1rem 3rem;
       }
 
-      .coming-soon {
-        font-size: 0.72rem;
+      .publications-list li {
+        font-size: 0.8125rem;
       }
     }
   </style>
@@ -135,12 +150,17 @@
         <li><a href="about.html">ABOUT ME</a></li>
         <li><a href="publications.html" class="active">PUBLICATIONS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="reads.html">READS</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="page-content">
-    <p class="coming-soon">Coming soon</p>
+    <ul class="publications-list">
+      <li><a href="https://superpresent.org/wp-content/uploads/2025/10/V5N4-v4.6.pdf" target="_blank" rel="noopener noreferrer">From the Belly</a>, Superpresent</li>
+      <li><a href="https://halfandone.com/what-the-ocean-knows/" target="_blank" rel="noopener noreferrer">What the Ocean Knows</a>, Half and One</li>
+      <li><a href="https://www.harespawlitjournal.com/issue-24" target="_blank" rel="noopener noreferrer">From the Belly</a>, Hare's Paw Literary Journal</li>
+    </ul>
   </main>
 
 </body>

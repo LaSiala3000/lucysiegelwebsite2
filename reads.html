@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me · Lucy Isabella Siegel</title>
+  <title>Reads · Lucy Isabella Siegel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -18,7 +18,6 @@
       --cream: #f0ede8;
       --red: #c0391b;
       --dark: #333333;
-      --font-headline: 'Antonio', sans-serif;
       --font-ui: 'Inter', sans-serif;
     }
 
@@ -29,7 +28,6 @@
       min-height: 100vh;
     }
 
-    /* NAV */
     nav {
       padding: 2.2rem 0 4rem;
       width: 100%;
@@ -86,33 +84,32 @@
       color: var(--red);
     }
 
-    .about-content {
+    .reads-content {
       padding: 0 2rem 4rem;
+      padding-left: 15.7rem;
       max-width: 880px;
       margin: 0 auto;
+      text-align: left;
     }
 
-    .about-layout {
-      display: flex;
-      gap: 2.5rem;
-      align-items: flex-start;
+    .reads-year {
+      font-family: var(--font-ui);
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--red);
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
     }
 
-    .about-photo {
-      flex: 0 0 280px;
-      width: 280px;
+    .reads-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .about-photo img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
-
-    .about-text {
-      flex: 1;
-      min-width: 0;
+    .reads-list li {
+      margin-bottom: 0.5rem;
       font-family: var(--font-ui);
       font-size: 0.875rem;
       line-height: 1.6;
@@ -133,23 +130,11 @@
         font-size: 0.72rem;
       }
 
-      .about-content {
+      .reads-content {
         padding: 0 1rem 3rem;
       }
 
-      .about-layout {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-      }
-
-      .about-photo {
-        flex: none;
-        width: 100%;
-        max-width: 280px;
-      }
-
-      .about-text {
+      .reads-list li {
         font-size: 0.8125rem;
       }
     }
@@ -161,23 +146,26 @@
     <div class="nav-inner">
       <div class="nav-name"><a href="index.html">LUCY ISABELLA SIEGEL</a></div>
       <ul class="nav-links">
-        <li><a href="about.html" class="active">ABOUT ME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
         <li><a href="publications.html">PUBLICATIONS</a></li>
         <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="reads.html">READS</a></li>
+        <li><a href="reads.html" class="active">READS</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="about-content">
-    <div class="about-layout">
-      <div class="about-photo">
-        <img src="about-photo.png" alt="Lucy Isabella Siegel" />
-      </div>
-      <div class="about-text">
-        <p>Lucy Siegel is a writer living in Brooklyn. In her poetry and prose she explores themes of personal transformation and the complexity of the human experience. She leans on rupture and refusal of tidy conclusions in favor of honesty and curiosity over certainty. She is currently working on her debut novel and poetry manuscript.</p>
-      </div>
-    </div>
+  <main class="reads-content">
+    <h2 class="reads-year">2026</h2>
+    <ul class="reads-list">
+      <li>Perfection (2022) by Vincenzo Latronico</li>
+      <li>Letters to a Young Poet (1929) by Rainer Maria Rilke</li>
+      <li>Men Without Women (2014) by Haruki Murakami</li>
+      <li>2 A.M. at The Cat's Pajamas (2014) by Marie-Helene Bertino</li>
+      <li>After Dark (2004) by Haruki Murakami</li>
+      <li>Memories, Dreams, Reflections (1963) by Carl Jung</li>
+      <li>The Carrying (2018) by Ada Limón</li>
+      <li>The Wild Iris (1992) by Louise Gluck</li>
+    </ul>
   </main>
 
 </body>

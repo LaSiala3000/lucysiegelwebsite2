@@ -63,7 +63,7 @@
       display: flex;
       list-style: none;
       justify-content: flex-start;
-      gap: 2.5rem;
+      gap: 1.25rem;
       padding: 0;
     }
 
@@ -86,18 +86,33 @@
 
     .contact-content {
       padding: 0 2rem 4rem;
+      padding-left: 15.7rem;
       max-width: 880px;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
     }
 
-    .coming-soon {
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .contact-list li {
+      margin-bottom: 0.75rem;
       font-family: var(--font-ui);
-      font-weight: 700;
-      font-size: 0.80rem;
-      letter-spacing: 0.12em;
+      font-size: 0.875rem;
+      line-height: 1.6;
       color: var(--dark);
-      text-transform: uppercase;
+    }
+
+    .contact-list a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 768px) {
@@ -106,7 +121,7 @@
       }
 
       .nav-links {
-        gap: 1.5rem;
+        gap: 1rem;
         flex-wrap: wrap;
       }
 
@@ -118,8 +133,8 @@
         padding: 0 1rem 3rem;
       }
 
-      .coming-soon {
-        font-size: 0.72rem;
+      .contact-list li {
+        font-size: 0.8125rem;
       }
     }
   </style>
@@ -133,12 +148,16 @@
         <li><a href="about.html">ABOUT ME</a></li>
         <li><a href="publications.html">PUBLICATIONS</a></li>
         <li><a href="contact.html" class="active">CONTACT</a></li>
+        <li><a href="reads.html">READS</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="contact-content">
-    <p class="coming-soon">Coming soon</p>
+    <ul class="contact-list">
+      <li>Substack: <a href="https://substack.com/@lucysiegel1" target="_blank" rel="noopener noreferrer">substack.com/@lucysiegel1</a></li>
+      <li>Email: <a href="mailto:lucyisabellasiegel@gmail.com">lucyisabellasiegel@gmail.com</a></li>
+    </ul>
   </main>
 
 </body>
